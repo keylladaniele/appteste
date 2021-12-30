@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: #E5E5E5;
+}
+
+h3 {
+    padding-top: 50px;
+    font-size: 24px;
+    font-style: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+.container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.form__div{
+    position: relative;
+    height: 55px;
+    width: 550px;
+    margin: 30px 0px 30px 85px;
+    
+}
+
+.form__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 423px;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid rgba(0, 0, 0, 0.56);
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+.form__label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    transition: .3s;
+}
+  .form__button{
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #FF8822;
+    color: #fff;
+    font-size: 10px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.form__button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+  
+  /*Input focus move up label*/
+  .form__input:focus + .form__label{
+    top: -.5rem;
+    left: .8rem;
+    color: #FF8822;
+    font-size: 10px;
+    font-weight: 500;
+    z-index: 10;
+  }
+  
+  /*Input focus sticky top label*/
+  .form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+    top: -.5rem;
+    left: .8rem;
+    font-size: 10px;
+    font-weight: 500;
+    z-index: 10;
+  }
+  
+  /*Input focus*/
+  .form__input:focus{
+    border: 1.5px solid #FF8822;
+
+  }
+
+.resumo, .footer{
+    padding: 10px 90px;
+    color: #0000008A;
+    font-size: 16px;
+}
+
+.mat-button {
+    font-weight: bold;
+    width: 328px;
+    color: black;
+    padding: 15px;
+    margin: 15px;
+}
+
+.mat-raised-button{
+    background: #FF8822;
+    width: 328px;
+    padding: 5px;
+    color: white;
+    border-radius: 25px;
+}
+
+.mat-raised-button:disabled{
+    background: #ff89225b;
+    width: 328px;
+    padding: 5px;
+    color: white;
+    border-radius: 25px;
+}
+
+
+.form-footer {
+    padding-top: 60px;
+}

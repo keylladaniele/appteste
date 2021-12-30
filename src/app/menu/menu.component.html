@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+    <mat-sidenav-content class="nav-left">
+        <mat-icon id="logo-icon" aria-label="Example home icon">fastfood</mat-icon>
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon id="item-icon" aria-label="Example home icon">article</mat-icon>PEDIDOS
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>EM ABERTOS</button>
+            <button mat-menu-item>ENCERRADOS</button>
+        </mat-menu>
+        <button mat-button>
+            <mat-icon id="item-icon" aria-label="Example home icon">person</mat-icon>CLIENTES
+        </button>
+        <footer>
+            <p>Todos os direitos reservados - &copy; 2021</p>
+        </footer>
+    </mat-sidenav-content>
+    <mat-sidenav-content class="nav-right">
+        <header>
+            <div class="saudacao">
+                <h1> Olá, Vanusa!</h1>
+            </div>
+            <div class="perfil">
+                <picture>
+                    
+                    <img src="https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="foto de perfil">
+                </picture>
+            </div>
+        </header>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

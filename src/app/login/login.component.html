@@ -1,0 +1,43 @@
+
+<div class="container">
+    
+    <h3>Seja bem-vindo!</h3>
+    <p class="resumo">Nós sabemos a importância de estar sempre de barriga cheia e o quanto isso pode ajudar no seu dia.
+    </p>
+    <div class="l-form">
+        <form action="" class="form" #f="ngForm" (ngSubmit)="login()" [formGroup]="loginForm">
+            <div class="form__div">
+                <input 
+                    id="loginEmail" 
+                    type="text" 
+                    class="form__input" 
+                    placeholder=" " 
+                    name="email" 
+                    ngModel 
+                    required
+                    #email="ngModel"
+                    formControlName="email">
+                <label class="form__label">Email</label>
+            </div>
+
+            <div class="form__div">
+                <input 
+                    id="loginPassword" 
+                    type="password" 
+                    class="form__input" 
+                    placeholder=" "
+                    name="password" 
+                    ngModel 
+                    required
+                    #password="ngModel"
+                    formControlName="password">
+                <label class="form__label">Password</label>
+            </div>
+
+
+            <button mat-button color="accent">RECUPERAR MINHA SENHA</button>
+            <button mat-raised-button color="primary" class="btn-entrar" type="submit" [disabled]="f.invalid">ENTRAR</button>
+        </form>
+    </div>
+    <p class="footer">Todos os direitos reservados - &copy; 2021</p>
+</div>
